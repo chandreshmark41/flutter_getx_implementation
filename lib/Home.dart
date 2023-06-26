@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:get/get_core/src/get_main.dart';
 import 'package:getx_implementation/Controller.dart';
+import 'package:getx_implementation/design_components/icon_button_on_dark.dart';
 import 'package:getx_implementation/design_components/icon_button_on_white.dart';
 import 'package:getx_implementation/design_components/primary_button.dart';
 import 'package:getx_implementation/theme/primary_theme.dart';
@@ -26,9 +27,13 @@ class Home extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-          PrimaryButton(title: 'Log In', onPressed: () => Get.to(Other())),
-            SizedBox(height: 30,),
-            IconButtonOnWhite(onPressed: () => Get.to(Other()), icon: Icons.arrow_back_ios)
+            PrimaryButton(title: 'Log In', onPressed: () => Get.to(Other())),
+            const SizedBox(height: 30,),
+            IconButtonOnWhite(onPressed: () => Get.to(Other()), icon: Icons.keyboard_arrow_left_sharp),
+            const SizedBox(height: 30,),
+            IconButtonOnDark(icon: Icons.file_upload_outlined, onPressed: () => Get.to(Other()))
+
+
           ],
         )
         ),
