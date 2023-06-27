@@ -13,8 +13,6 @@ class PrimaryButton extends StatelessWidget {
   final String title;
   final VoidCallback onPressed;
 
-
-
   @override
   Widget build(BuildContext context) {
     // TODO: implement build
