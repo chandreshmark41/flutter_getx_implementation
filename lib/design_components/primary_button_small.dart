@@ -2,9 +2,9 @@
 import 'package:flutter/material.dart';
 import 'package:getx_implementation/theme/primary_theme.dart';
 
-class PrimaryButton extends StatelessWidget {
+class PrimaryButtonSmall extends StatelessWidget {
 
-  const PrimaryButton(
+  const PrimaryButtonSmall(
       {super.key,
         required this.title,
         required this.onPressed,}
@@ -18,19 +18,19 @@ class PrimaryButton extends StatelessWidget {
     // TODO: implement build
     return SizedBox(
       height: 40,
-      width: 250,
+      // width: 125,
       child: ElevatedButton(
         style: ButtonStyle(
-          shape: MaterialStateProperty.all<RoundedRectangleBorder>(
-              RoundedRectangleBorder(
+            shape: MaterialStateProperty.all<RoundedRectangleBorder>(
+                RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(100),
-              )
-          ),
-          backgroundColor: MaterialStateProperty.resolveWith((states) =>
-          PrimaryTheme.of(context).blueColor)
+                )
+            ),
+            backgroundColor: MaterialStateProperty.resolveWith((states) =>
+            PrimaryTheme.of(context).blueColor)
         ),
         onPressed: onPressed,
-        child: Text(title, style: PrimaryTheme.of(context).heading2White,),
+        child: Text(title, style: PrimaryTheme.of(context).bodyTextNormalWhite,),
       ),
     );
   }
