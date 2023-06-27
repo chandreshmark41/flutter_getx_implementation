@@ -45,6 +45,15 @@ abstract class PrimaryTheme {
   String get bodyTextExtraSmallBlackFamily => typography.bodyTextExtraSmallBlackFamily;
   TextStyle get bodyTextExtraSmallBlack => typography.bodyTextExtraSmallBlack;
 
+  String get bodyTextNormalWhiteFamily => typography.bodyTextNormalWhiteFamily;
+  TextStyle get bodyTextNormalWhite => typography.bodyTextNormalWhite;
+
+  String get bodyTextSmallWhiteFamily => typography.bodyTextSmallWhiteFamily;
+  TextStyle get bodyTextSmallWhite=> typography.bodyTextSmallWhite;
+
+  String get bodyTextExtraSmallWhiteFamily => typography.bodyTextExtraSmallWhiteFamily;
+  TextStyle get bodyTextExtraSmallWhite=> typography.bodyTextExtraSmallWhite;
+
 
 
 
@@ -105,6 +114,15 @@ abstract class Typography{
 
   String get bodyTextExtraSmallBlackFamily;
   TextStyle get bodyTextExtraSmallBlack;
+
+  String get bodyTextNormalWhiteFamily;
+  TextStyle get bodyTextNormalWhite;
+
+  String get bodyTextSmallWhiteFamily;
+  TextStyle get bodyTextSmallWhite;
+
+  String get bodyTextExtraSmallWhiteFamily;
+  TextStyle get bodyTextExtraSmallWhite;
 }
 
 class LightThemeTypography extends Typography {
@@ -172,6 +190,30 @@ class LightThemeTypography extends Typography {
   TextStyle get bodyTextExtraSmallBlack => GoogleFonts.getFont(
     'Inter Tight',
     color: theme.darkBlueColor,
+    fontWeight: FontWeight.w400,
+    fontSize: 11,
+  );
+
+  String get bodyTextNormalWhiteFamily => 'Inter Tight';
+  TextStyle get bodyTextNormalWhite => GoogleFonts.getFont(
+    'Inter Tight',
+    color: theme.whiteColor,
+    fontWeight: FontWeight.w400,
+    fontSize: 14,
+  );
+
+  String get bodyTextSmallWhiteFamily => 'Inter Tight';
+  TextStyle get bodyTextSmallWhite => GoogleFonts.getFont(
+    'Inter Tight',
+    color: theme.whiteColor,
+    fontWeight: FontWeight.w400,
+    fontSize: 12,
+  );
+
+  String get bodyTextExtraSmallWhiteFamily => 'Inter Tight';
+  TextStyle get bodyTextExtraSmallWhite => GoogleFonts.getFont(
+    'Inter Tight',
+    color: theme.whiteColor,
     fontWeight: FontWeight.w400,
     fontSize: 11,
   );
