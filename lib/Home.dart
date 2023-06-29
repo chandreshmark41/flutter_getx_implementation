@@ -9,7 +9,9 @@ import 'package:getx_implementation/design_components/icon_button_on_white.dart'
 import 'package:getx_implementation/design_components/primary_button.dart';
 import 'package:getx_implementation/design_components/primary_button_small.dart';
 import 'package:getx_implementation/design_components/secondary_button.dart';
+import 'package:getx_implementation/factories/button_factory.dart';
 import 'package:getx_implementation/theme/primary_theme.dart';
+import 'package:getx_implementation/utils/button_types.dart';
 
 import 'Other.dart';
 
@@ -29,7 +31,8 @@ class Home extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            PrimaryButton(title: 'Log In', onPressed: () => Get.to(Other())),
+            //PrimaryButton(title: 'Log In', onPressed: () => Get.to(Other())),
+            ButtonFactory.customButton(ButtonTypes.PrimaryButton, 'Log In', () => Get.to(Other()) ),
             const SizedBox(height: 30,),
             IconButtonOnWhite(onPressed: () => Get.to(Other()), icon: Icons.keyboard_arrow_left_sharp),
             const SizedBox(height: 30,),

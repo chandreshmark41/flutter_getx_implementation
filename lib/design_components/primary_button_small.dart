@@ -34,6 +34,4 @@ class PrimaryButtonSmall extends StatelessWidget {
       ),
     );
   }
-
-
 }
