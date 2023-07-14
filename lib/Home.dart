@@ -32,17 +32,15 @@ class Home extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             //PrimaryButton(title: 'Log In', onPressed: () => Get.to(Other())),
-            ButtonFactory.customButton(ButtonTypes.PrimaryButton, 'Log In', () => Get.to(Other()) ),
+            ButtonFactory.customButton(ButtonTypes.PrimaryButton, 'Log In', () => Get.to(TableRangeExample()) ),
             const SizedBox(height: 30,),
-            IconButtonOnWhite(onPressed: () => Get.to(Other()), icon: Icons.keyboard_arrow_left_sharp),
+            IconButtonOnWhite(onPressed: () => Get.to(TableRangeExample()), icon: Icons.keyboard_arrow_left_sharp),
             const SizedBox(height: 30,),
-            IconButtonOnDark(icon: Icons.file_upload_outlined, onPressed: () => Get.to(Other())),
+            IconButtonOnDark(icon: Icons.file_upload_outlined, onPressed: () => Get.to(TableRangeExample())),
             const SizedBox(height: 30,),
-            PrimaryButtonSmall(title: "Book", onPressed: () => Get.to(Other())),
+            PrimaryButtonSmall(title: "Book", onPressed: () => Get.to(TableRangeExample())),
             const SizedBox(height: 30,),
-            SecondaryButton(title: "Sign Up", onPressed: () => Get.to(Other()))
-
-
+            SecondaryButton(title: "Sign Up", onPressed: () => Get.to(TableRangeExample()))
           ],
         )
         ),
